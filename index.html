@@ -1,64 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosinuts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header class="header">
-        <nav>
-            <a class="logo">
-                <img src="./photo/logo.svg" alt="logo Cosinuts">
-            </a>
-            <ul class="menu">
-                <li class="menu-list">
-                    <a href="">Главная</a>
-                </li>
-                <li class="menu-list">
-                    <a href="">Каталог</a>
-                </li>
-                <li class="menu-list">
-                    <a href="">О нас</a>
-                </li>
-                <li class="menu-list">
-                    <a href="">О доставке</a>
-                </li>
-                <li class="menu-list">
-                    <a href="">Магазины</a>
-                </li>
-                <li class="menu-list">
-                    <a href="">Контакты</a>
-                </li>
-            </ul>
-            <div class="phone-number">
-                <img src="./photo/phone-icon.svg" alt="phone-icon">
-                <a class="phone" href="tel:79002323232">+7 (900) 232 32-32</a>   
-            </div>
-            <p>Избранное</p>
-            <a class="shopping-cart" href="">Корзина</a> 
-            <span class="total">3</span>
-        </nav>
-    </header>
-    <main>
-        <section class="home">
-            <div class="home-content">
-                <h1 class="page-name"><span>Dri</span>ed <br> Fruits</h1>
-                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
-                </p>
-                <div class="search-box" > 
-                    <input class="search-text" type="text" placeholder="Кешью Австралийский ">
-                    <a class="search-btn" href="#">
-                        <img src="./photo/search-icon.svg" alt="search-icon">
-                    </a>
+        <div class="container">
+            <div class="header__top">
+                <a class="logo">
+                    <img src="./photo/logo.svg" alt="logo Cosinuts">
+                </a>
+                <ul class="menu">
+                    <li class="menu__list">
+                        <a href="">Главная</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="">Каталог</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="">O нас</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="">O доставке</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="">Магазины</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="">Контакты</a>
+                    </li>
+                </ul>
+                <div class="contacts">
+                    <img src="./photo/phone-icon.svg" alt="phone-icon">
+                    <a class="contacts__number" href="tel:79002323232">+7 (900) 232 32-32</a>   
+                <p class="wishlist">Избранное</p>
+                <div class="shopping-cart"t>
+                    <a  href="#">Корзина</a> 
+                    <div class="total">3</div> 
                 </div>
-                    <img class="wallpaper" src="./photo/home-photo/photo.png" alt="">
-                    <img class="wallpaper-brown"  src="./photo/home-photo/wallpaper.png" alt="">
-                    <img class="photo-1" src="./photo/home-photo/photo-1.png" alt="">
-                    <img class="photo-2" src="./photo/home-photo/photo-2.png" alt="">
+                </div>
             </div>
-        </section>
-    </main>
+           <div class="header__content">
+                <div class="container-one">
+                    <h1 class="title"><span class="title-brown">Dri</span><span>ed</span> <br>
+                    <b>Fruits</b> 
+                    </h1>
+                    <p class="title-descr">
+                        Lorem Ipsum - это текст-"рыба", часто используемый в <br>печати и вэб-дизайне. Lorem Ipsum является стандартной
+                    </p>
+                    <form class="search-bar" action="" >
+                    <input type="text" placeholder="Кешью Австралийский ">
+                    <button type="submit">
+                        <img src="./photo/search-icon.svg" alt="">
+                    </button>
+                    </form>
+                </div>
+                <div class="container-two">
+                    <img class="photo1" src="./photo/home-photo/photo-1.png" alt="">
+                    <img class="photo2" src="./photo/home-photo/photo-2.png" alt="">
+                </div>
+           </div> 
+           
+        </div>    
+    </header>
+       
+    
 </body>
 </html>
