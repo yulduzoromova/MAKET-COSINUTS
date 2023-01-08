@@ -8,6 +8,11 @@ html{
     box-sizing:inherit;
 }
 
+@font-face{
+    font-family: 'SF Pro Display';
+    src: url(../fonts/FontsFree-Net-SFProDisplay-Light.ttf);
+}
+
 body {
     font-family:'Roboto', sans-serif;
     font-weight: 400;
@@ -57,6 +62,11 @@ header {
 .menu__list {
     margin-right: 31px;
     color: #00000059;
+}
+
+.menu__list:hover {
+    font-weight: bold;
+    color:#000000;
 }
 
 .contacts {
@@ -290,4 +300,128 @@ header {
     font-weight: 500;
     font-size: 21px;
     line-height: 24px;
+}
+
+/* SECTION ONE */
+.section-one{
+    margin-top: 178px;
+}
+
+.assortment__title {
+    height: 84px;
+    width: 624px;
+    margin: 0 auto;
+    font-family: 'Roboto' sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 84px;
+    display: flex;
+    align-items: center;
+}
+
+.assortment__menu {
+    width: 1294px;
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin: 75px auto 128px auto;
+}
+
+.assortment__menu-list {
+    padding: 13px 16px;
+}
+
+.assortment__menu-list:hover {
+    background: #FEB302;
+    border-radius: 15px;
+    color:#fff;
+}
+
+.section-one__container {
+    display: grid;
+    grid-template-columns: 409px 409px 409px 409px;
+    gap: 27px;
+}
+
+.assortment__box {
+    position: relative;
+}
+
+.assortment {
+    height: 670px;
+    background: #F6F9FF;
+    border-radius: 27px;
+    padding-left: 24px;
+    font-size: 16px;
+    letter-spacing: 0.891192px;
+}
+
+.assortment__img {
+    position: absolute;
+    top: 15px;
+    width: 395px;
+    height: 391px;
+    border-radius: 27px;
+    padding-left: 16px;
+}
+
+.assortment__name {
+    padding-top: 429px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    color: #000000;
+    margin-bottom: 13px;
+}
+
+.assortment__descr {
+    margin-bottom: 18px;
+    line-height: 23px;
+    color: #363636;
+}
+
+.assortment__sum {
+    font-weight: 700;
+    line-height: 23px;
+    display: flex;
+    margin-bottom: 31px;
+}
+
+.assortment__sum-sale {
+    color: #DA5C5C;
+    margin-right: 16px;
+}
+
+.assortment__sum-withoutsale {
+    color: rgba(54, 54, 54, 0.25);
+}
+
+.assortment__footer {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+
+.assortment__footer-box {
+    width: 55px;
+    height: 55px;
+    background: #F8F8F8;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.assortment__footer-box img {
+    padding-top: 16px;
+}
+
+.assortment__footer__button {
+    width: 184px;
+    height: 55px;
+    background: #FEB302;
+    border-radius: 13px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
 }
